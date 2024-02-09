@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<odoo>
+    <record id="malls_model_action" model="ir.actions.act_window">
+        <field name="name">Malls</field>
+        <field name="res_model">malls</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+              Nothing is here...
+            </p>
+          </field>
+    </record>
+
+    <record id="malls_model_form" model="ir.ui.view">
+        <field name="name">malls.form</field>
+        <field name="model">malls</field>
+        <field name="arch" type="xml">
+            <form String="Mall Form">
+                <sheet>
+                    <h1 class="mb32" ><field name="name"/></h1>
+                    <group>
+                        <group>
+                            <field name="owner" class="mb16"/>
+                            <field name="address" class="mb16" />
+                            <field name="owner_contact" class="mb16"/>
+                            <field name="owner_email" />
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                  </div>
+            </form>
+      </field>
+    </record>
+</odoo>

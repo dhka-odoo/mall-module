@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+mall-management-system.access_malls,access_malls,mall-management-system.model_malls,base.group_user,1,1,1,1
+mall-management-system.access_mall_shop,access_mall_shop,mall-management-system.model_mall_shop,base.group_user,1,1,1,1
+mall-management-system.access_tenant,access_tenant,mall-management-system.model_tenant,base.group_user,1,1,1,1

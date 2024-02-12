@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-
 <odoo>
+    <!-- all malls model action -->
     <record id="malls_model_action" model="ir.actions.act_window">
         <field name="name">Malls</field>
         <field name="res_model">malls</field>
@@ -11,7 +11,7 @@
             </p>
           </field>
     </record>
-
+    <!-- all malls model form -->
     <record id="malls_model_form" model="ir.ui.view">
         <field name="name">malls.form</field>
         <field name="model">malls</field>

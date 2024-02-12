@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- mall shop action -->
+    <record id="mall_shop_actions" model="ir.actions.act_window">
+        <field name="name" >Shops</field>
+        <field name="res_model">mall.shop</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+              Nothing is here...
+            </p>
+          </field>  
+    </record>
+    <!-- mall shop form view -->
+    <record id="mall_shop_form" model="ir.ui.view">
+        <field name="name">mall.shop.form</field>
+        <field name="model">mall.shop</field>
+        <field name="arch" type="xml">
+            <form string="Shops">
+                <sheet>
+                    <label for="name" string="Shop Name"></label>
+                    <h1><field name="name"/></h1>
+                    <group>
+                        <group>
+                            <field name="mall_name_id" />
+                            <field name="tenant" />
+                        </group>
+                        <group>
+                            <field name="shop_num" />
+                            <field name="shop_rent" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <group>
+                                <field name="description" />
+                                <field name="floor_num" />
+                                <field name="shop_area" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- mall shop tree view -->
+    <record id="mall_shop_tree" model="ir.ui.view">
+        <field name="name">mall.shop.tree</field>
+        <field name="model">mall.shop</field>
+        <field name="arch" type="xml">
+          <tree string="Shops">
+            <field name="name" />
+            <field name="shop_num" />
+            <field name="tenant" />
+            <field name="floor_num" />
+            <field name="mall_name_id" />
+          </tree>
+        </field>
+    </record>
+</odoo>

@@ -1,3 +1,3 @@
 from . import malls
-from . import shop
-from . import tenant
+from . import mall_shop
+from . import mall_tenant

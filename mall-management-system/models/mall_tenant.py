@@ -1,7 +1,7 @@
 from odoo import fields,models
 
-class tenant(models.Model):
-    _name = "tenant"
+class mallTenant(models.Model):
+    _name = "mall.tenant"
     _description = "tenant information"
 
     name = fields.Char('Tenants name',required=True)

@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
-
 <odoo>
     <menuitem id="mall_menu" name="Mallz">
             <menuitem id="mall_menu_action" action="malls_model_action" />
+            <menuitem id="mall_shop_menu_action" action="mall_shop_actions" />
+            <menuitem id="mall_tenant_menu_action" action="mall_tenant_action" />
     </menuitem>
 </odoo>

@@ -23,7 +23,7 @@
                     <group>
                         <group>
                             <field name="mall_name_id" />
-                            <field name="tenant" />
+                            <field name="tenant_id" />
                         </group>
                         <group>
                             <field name="shop_num" />
@@ -38,6 +38,9 @@
                                 <field name="shop_area" />
                             </group>
                         </page>
+                        <page string="Offers">
+                            <field name="offer_ids" />
+                        </page>
                     </notebook>
                 </sheet>
             </form>
@@ -51,7 +54,7 @@
           <tree string="Shops">
             <field name="name" />
             <field name="shop_num" />
-            <field name="tenant" />
+            <field name="tenant_id" />
             <field name="floor_num" />
             <field name="mall_name_id" />
           </tree>

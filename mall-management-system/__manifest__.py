@@ -12,7 +12,9 @@
         'views/all_malls_views.xml',
         'views/mall_menus.xml',
         'views/mall_shop_views.xml',
-        'views/mall_tenant_views.xml'
+        'views/mall_tenant_views.xml',
+        'views/mall_tenant_manager_views.xml',
+        'views/mall_shop_offer_views.xml'
     ],
     'application': True,
     'installable': True,

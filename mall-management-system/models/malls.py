@@ -10,3 +10,4 @@ class malls(models.Model):
     owner = fields.Char('Owner',required=True,tracking=True)
     owner_contact = fields.Integer("Owner's Contact no.",tracking=True)
     owner_email = fields.Char('Email',required=True,tracking=True)
+    shop_ids = fields.One2many('mall.shop','mall_name_id', string="Shops")

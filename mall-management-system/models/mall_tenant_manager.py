@@ -9,4 +9,4 @@ class mallTenantManager(models.Model):
     tenant_manager_contact = fields.Integer("Contact no.")
     tenant_manager_mobile = fields.Integer("Mobile no.")
     tenant_manager_email = fields.Char('Email')
-    tenant_assigned_ids = fields.Many2many('mall.tenant',string='Tenants assigned')
+    tenant_assigned_ids = fields.One2many('mall.tenant','tenant_manager_id')

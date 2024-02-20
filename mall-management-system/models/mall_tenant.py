@@ -18,3 +18,4 @@ class mallTenant(models.Model):
         selection=[('individual','Individual'),('company','company')],
         default="individual"
     )
+    tenant_manager_id = fields.Many2one('mall.tenant.manager',string="Tenant Manager")

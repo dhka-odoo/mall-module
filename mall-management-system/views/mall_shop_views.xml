@@ -17,6 +17,13 @@
         <field name="model">mall.shop</field>
         <field name="arch" type="xml">
             <form string="Shops">
+                <header>
+                    <div > 
+                        <button name="on_rent_action" type="object" string="Give On Rent" />
+                        <button name="cancel_action" type="object" string="Cancel" />
+                      </div>
+                    <field name="state" widget="statusbar" statusbar_visible="New,Offer_Received,Offer_Accepted,On_Rent"  />
+                </header>
                 <sheet>
                     <label for="name" string="Shop Name"></label>
                     <h1><field name="name"/></h1>
@@ -58,6 +65,22 @@
             <field name="floor_num" />
             <field name="mall_name_id" />
           </tree>
+        </field>
+    </record>
+    <!-- mall shop search view -->
+    <record id="mall_shop_search" model="ir.ui.view">
+        <field name="name">mall.shop.search</field>
+        <field name="model">mall.shop</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="shop_num" />
+                <field name="tenant_id" />
+                <field name="mall_name_id" />
+                <group string="Group By">
+                    <filter string="Malls" name="mall_name_ids" context="{'group_by':'mall_name_id'}" />
+                </group>
+            </search>
         </field>
     </record>
 </odoo>

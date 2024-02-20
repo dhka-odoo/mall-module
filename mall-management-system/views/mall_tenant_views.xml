@@ -54,6 +54,9 @@
                     <field name="shop_type" />
                   </group>
                 </page>
+                <page string="Tenant Manager">
+                  <group><field name="tenant_manager_id" /></group>
+                </page>
               </notebook>
             </sheet>
           </form>

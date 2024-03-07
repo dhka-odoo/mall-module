@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <odoo>
     <menuitem id="mall_menu" name="Mallz">
+        <menuitem id="mall_overview_menu" action="malls_overview_action" />
+        <menuitem id="mall_shop_rent_menu" action="mall_shop_rent_action" />
         <menuitem id="mall_menu_level_1" name="Malls menu" >
             <menuitem id="mall_menu_action" action="malls_model_action" />
-            <menuitem id="mall_shop_menu_action" action="mall_shop_actions" />
             <menuitem id="mall_tenant_menu_action" action="mall_tenant_action" />
-            <menuitem id="mall_tenant_manager_menu_action" action="mall_tenant_manager_action" />
+            <menuitem id="mall_shop_categories_menu_action" action="mall_shop_categories_actions" />
         </menuitem>
     </menuitem>
 </odoo>

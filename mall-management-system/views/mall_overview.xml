@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="malls_overview_action" model="ir.actions.act_window">
+        <field name="name">Malls Overview</field>
+        <field name="res_model">malls</field>
+        <field name="view_mode">kanban</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+              Nothing is here...
+            </p>
+          </field>
+    </record>
+    <!-- malls overview -->
+    <record id="mall_model_kanban" model="ir.ui.view">
+        <field name="name">mall.kanban</field>
+        <field name="model">malls</field>
+        <field name="arch" type="xml">
+            <kanban create="false">
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div>
+                                <h3>
+                                    <field name="name"/>
+                                </h3>
+                            </div>
+                            <div>
+                                <field name="owner"/>
+                            </div>
+                            <div>
+                                <label for="num_shops">No. of Shops : </label>
+                                <field name="num_shops" />
+                            </div>
+                            <div>
+                                <button name="%(mall-management-system.mall_shop_actions)d" class="btn btn-primary" type="action" string="Shops"></button>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>        
+    </record>
+</odoo>

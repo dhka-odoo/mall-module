@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <record id="seq_mall_shop_rent" model="ir.sequence">
+        <field name="name">Rent id</field>
+        <field name="code">mall.shop.rent</field>
+        <field name="prefix">Rent</field>
+        <field name="padding">4</field>
+      </record>
+</odoo>

@@ -29,7 +29,7 @@
                 <field name="validity" />
                 <field name="date_deadline" />
                 <button name="offer_accept" title="Accept" type="object" icon="fa-check" invisible="status"/>
-                <button name="offer_refuse" title="Accept" type="object" icon="fa-check" invisible="status"/>
+                <button name="offer_refuse" title="Accept" type="object" icon="fa-times" invisible="status"/>
                 <field name="status" />
             </tree>
         </field>

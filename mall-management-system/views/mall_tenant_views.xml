@@ -47,15 +47,7 @@
               </group>
               <notebook>
                 <page string="Stop Details">
-                  <group>
-                    <field name="shop_details" />
-                    <field name="shop_name" />
-                    <field name="shop_num" />
-                    <field name="shop_type" />
-                  </group>
-                </page>
-                <page string="Tenant Manager">
-                  <group><field name="tenant_manager_id" /></group>
+                    <field name="shop_num" readonly="True" />
                 </page>
               </notebook>
             </sheet>
@@ -70,7 +62,7 @@
         <search string="search tenants">
           <field name="name" />
           <field name="company_name" />
-          <field name="shop_name" />
+          <!-- <field name="shop_name" /> -->
           <field name="shop_num" />
         </search>
       </field>

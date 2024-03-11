@@ -50,7 +50,7 @@
                         <page string="Description">
                             <group>
                                 <field name="description" />
-                                <field name="floor_num" />
+                                <field name="floor_num_id" />
                                 <field name="shop_area" />
                             </group>
                         </page>
@@ -79,7 +79,7 @@
             <field name="shop_num" />
             <field name="name" />
             <field name="tenant_id" />
-            <field name="floor_num" />
+            <field name="floor_num_id" />
             <field name="mall_name_id" />
           </tree>
         </field>
@@ -98,7 +98,7 @@
                 <filter string="On Rent" name="On Rent" domain="[('state','=','On_Rent')]" />
                 <group string="Group By">
                     <filter string="Malls" name="mall_name_ids" context="{'group_by':'mall_name_id'}" />
-                    <filter string="Floors" name="floor_num" context="{'group_by':'floor_num'}" />
+                    <filter string="Floors" name="floor_num_id" context="{'group_by':'floor_num_id'}" />
                 </group>
             </search>
         </field>
@@ -108,7 +108,7 @@
         <field name="name">mall.shop.kanban</field>
         <field name="model">mall.shop</field>
         <field name="arch" type="xml">
-            <kanban default_group_by="category_id" records_draggable="false">
+            <kanban default_group_by="floor_num_id" records_draggable="false">
                 <field name="state" />
                 <templates>
                     <t t-name="kanban-box">

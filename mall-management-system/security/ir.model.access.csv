@@ -5,3 +5,4 @@ mall-management-system.access_mall_tenant,access_mall_tenant,mall-management-sys
 mall-management-system.access_mall_shop_offer,access_mall_shop_offer,mall-management-system.model_mall_shop_offer,base.group_user,1,1,1,1
 mall-management-system.access_mall_shop_categories,access_mall_shop_categories,mall-management-system.model_mall_shop_categories,base.group_user,1,1,1,1
 mall-management-system.access_mall_shop_rent,access_mall_shop_rent,mall-management-system.model_mall_shop_rent,base.group_user,1,1,1,1
+mall-management-system.access_mall_floor,access_mall_floor,mall-management-system.model_mall_floor,base.group_user,1,1,1,1

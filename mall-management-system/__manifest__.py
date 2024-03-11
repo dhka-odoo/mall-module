@@ -16,6 +16,7 @@
         'views/mall_shop_offer_views.xml',
         'views/mall_tenant_views.xml',
         'views/mall_shop_categories_views.xml',
+        'views/mall_floor_views.xml',
         'data/mall_shop_rent_sequence.xml',
         'views/res_users_views.xml',
         'views/mall_menus.xml',

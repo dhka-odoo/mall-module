@@ -18,6 +18,20 @@
         <field name="arch" type="xml">
             <form String="Mall Form">
                 <sheet>
+
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" name="mall-management-system.mall_floor_actions" type="action" string="Floors">
+                            <div class="o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="floors"/>
+                                </span>
+                                <span class="o_stat_text">
+                                    Floors
+                                </span>
+                            </div>
+                        </button>
+                    </div>
+
                     <h1 class="mb32" ><field name="name"/></h1>
                     <group>
                         <group>

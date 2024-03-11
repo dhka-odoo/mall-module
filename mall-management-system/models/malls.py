@@ -13,7 +13,8 @@ class malls(models.Model):
     shop_ids = fields.One2many('mall.shop','mall_name_id', string="Shops",tracking=True)
     description = fields.Text('Mall Description')
     mall_area = fields.Float('Mall Area (sqm)')
-    floors = fields.Integer('No. of Floors',default=1)
+    floors = fields.Integer('No. of Floors',compute='_compute_floors')
+    floor_ids = fields.One2many('mall.floor','mall_id')
     num_shops = fields.Integer('No. of Shops',compute="_compute_num_shops")
     parking = fields.Boolean('Parking')
     num_parking_celler = fields.Integer('No. of Parking Cellers')
@@ -32,3 +33,8 @@ class malls(models.Model):
     def _compute_num_shops(self):
         for record in self:
             record.num_shops = len(record.shop_ids)
+
+    @api.depends('floor_ids')
+    def _compute_floors(self):
+        for record in self:
+            record.floors = len(record.floor_ids)

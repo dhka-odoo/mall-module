@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <record id="demo_mall_1" model="malls">
+        <field name="name">City Plaza</field>
+        <field name="address">456, Main Street</field>
+        <field name="owner">Rahul Gupta</field>
+        <field name="owner_contact">9876543210</field>
+        <field name="owner_email">rahul@example.com</field>
+        <field name="description">City Plaza is a modern shopping mall located in the heart of the city.</field>
+        <field name="mall_area">20000</field>
+        <field name="parking">True</field>
+        <field name="num_parking_celler">2</field>
+        <field name="parking_area">5000</field>
+    </record>
+
+    <record id="demo_mall_2" model="malls">
+        <field name="name">Mega Mall</field>
+        <field name="address">789, Commercial Avenue</field>
+        <field name="owner">Sunita Sharma</field>
+        <field name="owner_contact">9876543211</field>
+        <field name="owner_email">sunita@example.com</field>
+        <field name="description">Mega Mall offers a diverse shopping experience with a wide range of stores and amenities.</field>
+        <field name="mall_area">25000</field>
+        <field name="parking">True</field>
+        <field name="num_parking_celler">3</field>
+        <field name="parking_area">6000</field>
+    </record>
+    
+    <record id="demo_mall_3" model="malls">
+        <field name="name">Central Square</field>
+        <field name="address">321, High Street</field>
+        <field name="owner">Vikram Singh</field>
+        <field name="owner_contact">9876543212</field>
+        <field name="owner_email">vikram@example.com</field>
+        <field name="description">Central Square is a bustling mall known for its premium shopping and entertainment options.</field>
+        <field name="mall_area">30000</field>
+        <field name="parking">True</field>
+        <field name="num_parking_celler">4</field>
+        <field name="parking_area">7000</field>
+    </record>
+    
+    
+</odoo>

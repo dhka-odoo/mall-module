@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <!-- offers for mall 1 shop 3 demo -->
+    <record id="demo_shop_offer_1" model="mall.shop.offer">
+        <field name="price">10000.0</field>
+        <field name="status">refused</field>
+        <field name="partner" ref="demo_tenant_1"/>
+        <field name="shop_id" ref="demo_mall_1_shop_3"/>
+        <field name="validity">7</field>
+    </record>
+
+    <function model="mall.shop.offer" name="offer_refuse">
+        <value eval="[ref('demo_shop_offer_1')]"/>
+    </function>
+    
+    <record id="demo_shop_offer_2" model="mall.shop.offer">
+        <field name="price">12000.0</field>
+        <field name="partner" ref="demo_tenant_2"/>
+        <field name="shop_id" ref="demo_mall_1_shop_3"/>
+        <field name="validity">7</field>
+    </record>
+    
+    <!-- offers for mall 2 shop 1 demo -->
+    <record id="demo_shop_offer_3" model="mall.shop.offer">
+        <field name="price">15000.0</field>
+        <field name="partner" ref="demo_tenant_5"/>
+        <field name="status">refused</field>
+        <field name="shop_id" ref="demo_mall_2_shop_1"/>
+        <field name="validity">7</field>
+    </record>
+
+    <function model="mall.shop.offer" name="offer_refuse">
+        <value eval="[ref('demo_shop_offer_3')]"/>
+    </function>
+
+    <record id="demo_shop_offer_4" model="mall.shop.offer">
+        <field name="price">16000.0</field>
+        <field name="partner" ref="demo_tenant_1"/>
+        <field name="shop_id" ref="demo_mall_2_shop_1"/>
+        <field name="validity">7</field>
+    </record>
+
+    <record id="demo_shop_offer_5" model="mall.shop.offer">
+        <field name="price">16500.0</field>
+        <field name="partner" ref="demo_tenant_5"/>
+        <field name="shop_id" ref="demo_mall_2_shop_1"/>
+        <field name="validity">10</field>
+    </record>
+    
+    <!-- offers for mall 2 shop 3 demo -->
+    <record id="demo_shop_offer_6" model="mall.shop.offer">
+        <field name="price">17000.0</field>
+        <field name="partner" ref="demo_tenant_3"/>
+        <field name="status">refused</field>
+        <field name="shop_id" ref="demo_mall_2_shop_3"/>
+        <field name="validity">7</field>
+    </record>
+
+    <function model="mall.shop.offer" name="offer_refuse">
+        <value eval="[ref('demo_shop_offer_6')]"/>
+    </function>
+
+    <record id="demo_shop_offer_7" model="mall.shop.offer">
+        <field name="price">20000.0</field>
+        <field name="status">accepted</field>
+        <field name="partner" ref="demo_tenant_4"/>
+        <field name="shop_id" ref="demo_mall_2_shop_3"/>
+        <field name="validity">7</field>
+    </record>
+
+    <function model="mall.shop.offer" name="offer_accept">
+        <value eval="[ref('demo_shop_offer_7')]"/>
+    </function>
+
+    <!-- offers for mall 3 shop 2 demo -->
+
+    <record id="demo_shop_offer_8" model="mall.shop.offer">
+        <field name="price">10000.0</field>
+        <field name="partner" ref="demo_tenant_5"/>
+        <field name="status">accepted</field>
+        <field name="shop_id" ref="demo_mall_3_shop_2"/>
+        <field name="validity">7</field>
+    </record>
+
+    <function model="mall.shop.offer" name="offer_accept">
+        <value eval="[ref('demo_shop_offer_8')]"/>
+    </function>
+    <function model="mall.shop" name="on_rent_action">
+        <value eval="[ref('demo_mall_3_shop_2')]"/>
+    </function>
+
+    <!-- offers for mall 3 shop 3 demo -->
+    <record id="demo_shop_offer_9" model="mall.shop.offer">
+        <field name="price">11000.0</field>
+        <field name="status">refused</field>
+        <field name="partner" ref="demo_tenant_4"/>
+        <field name="shop_id" ref="demo_mall_3_shop_3"/>
+        <field name="validity">7</field>
+    </record>
+
+    <function model="mall.shop.offer" name="offer_refuse">
+        <value eval="[ref('demo_shop_offer_9')]"/>
+    </function>
+
+    <record id="demo_shop_offer_10" model="mall.shop.offer">
+        <field name="price">12000.0</field>
+        <field name="status">accepted</field>
+        <field name="partner" ref="demo_tenant_2"/>
+        <field name="shop_id" ref="demo_mall_3_shop_3"/>
+        <field name="validity">7</field>
+    </record>
+
+    <function model="mall.shop.offer" name="offer_accept">
+        <value eval="[ref('demo_shop_offer_10')]"/>
+    </function>
+    <function model="mall.shop" name="on_rent_action">
+        <value eval="[ref('demo_mall_3_shop_3')]"/>
+    </function>
+
+</odoo>

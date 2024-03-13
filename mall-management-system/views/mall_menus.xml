@@ -7,7 +7,6 @@
             <menuitem id="mall_menu_action" action="malls_model_action" />
             <menuitem id="mall_tenant_menu_action" action="mall_tenant_action" />
             <menuitem id="mall_shop_categories_menu_action" action="mall_shop_categories_actions" />
-            <menuitem id="mall_floor_menu_actions" action="mall_floor_actions" />
         </menuitem>
     </menuitem>
 </odoo>

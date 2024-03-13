@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <!-- Mall floor 1 demo -->
+    <record id="demo_mall_1_floor_1" model="mall.floor">
+        <field name="name">1</field>
+        <field name="mall_id" ref="demo_mall_1"/>
+        <field name="number_of_shops">10</field>
+    </record>
+    
+    <record id="demo_mall_1_floor_2" model="mall.floor">
+        <field name="name">2</field>
+        <field name="mall_id" ref="demo_mall_1"/>
+        <field name="number_of_shops">12</field>
+    </record>
+
+    <!-- Mall floor 2 demo -->
+    <record id="demo_mall_2_floor_0" model="mall.floor">
+        <field name="name">0</field>
+        <field name="mall_id" ref="demo_mall_2"/>
+        <field name="number_of_shops">15</field>
+    </record>
+    
+    <record id="demo_mall_2_floor_1" model="mall.floor">
+        <field name="name">1</field>
+        <field name="mall_id" ref="demo_mall_2"/>
+        <field name="number_of_shops">12</field>
+    </record>
+
+    <record id="demo_mall_2_floor_2" model="mall.floor">
+        <field name="name">2</field>
+        <field name="mall_id" ref="demo_mall_2"/>
+        <field name="number_of_shops">15</field>
+    </record>
+
+    <!-- Mall floor 3 demo -->
+    <record id="demo_mall_3_floor_-1" model="mall.floor">
+        <field name="name">-1</field>
+        <field name="mall_id" ref="demo_mall_3"/>
+        <field name="number_of_shops">8</field>
+    </record>
+    
+    <record id="demo_mall_3_floor_0" model="mall.floor">
+        <field name="name">0</field>
+        <field name="mall_id" ref="demo_mall_3"/>
+        <field name="number_of_shops">11</field>
+    </record>
+    
+    <record id="demo_mall_3_floor_1" model="mall.floor">
+        <field name="name">1</field>
+        <field name="mall_id" ref="demo_mall_3"/>
+        <field name="number_of_shops">12</field>
+    </record>
+
+</odoo>

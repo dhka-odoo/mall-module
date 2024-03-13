@@ -20,7 +20,7 @@
                 <sheet>
 
                     <div class="oe_button_box" name="button_box">
-                        <button class="oe_stat_button" name="mall-management-system.mall_floor_actions" type="action" string="Floors">
+                        <button class="oe_stat_button" name="%(mall-management-system.mall_floor_actions)d" type="action" string="Floors">
                             <div class="o_stat_info">
                                 <span class="o_stat_value">
                                     <field name="floors"/>
@@ -32,11 +32,11 @@
                         </button>
                     </div>
 
-                    <h1 class="mb32" ><field name="name"/></h1>
+                    <h1 class="mb32" ><field name="name" placeholder="e.g. Alpha mall" /></h1>
                     <group>
                         <group>
-                            <field name="owner" class="mb16"/>
-                            <field name="address" class="mb16" />
+                            <field name="owner" class="mb16" placeholder="e.g. Brandon" />
+                            <field name="address" class="mb16" placeholder="e.g. 123, Main Street" />
                         </group>
                         <group>
                             <field name="owner_contact" class="mb16"/>

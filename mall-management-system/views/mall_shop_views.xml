@@ -5,6 +5,9 @@
         <field name="name" >Shops</field>
         <field name="res_model">mall.shop</field>
         <field name="domain">[('mall_name_id', '=', active_id)]</field>
+        <field name="context">{
+            'default_mall_name_id': active_id,
+        }</field>
         <field name="view_mode">kanban,tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
@@ -29,29 +32,31 @@
                     <field name="state" widget="statusbar" statusbar_visible="New,Offer_Received,Offer_Accepted,On_Rent"  />
                 </header>
                 <sheet>
+                    <widget name="web_ribbon" title="On Rent" bg_color="text-bg-success" invisible="state !='On_Rent'"/>
+                    <widget name="web_ribbon" title="Canceled" bg_color="text-bg-danger" invisible="state !='Canceled'"/>
                     <h1><group>
                         <field name="shop_num" />
-                        <field name="name"/>
                     </group>
-                    </h1>
+                </h1>
+                <group>
                     <group>
-                        <group>
-                            <field name="mall_name_id" />
-                            <field name="category_id" />
-                            <field name="tenant_id" />
-                        </group>
-                        <group>
-                            <field name="shop_rent" readonly="True" />
-                            <field name="best_price" />
-                            <field name="date_on_rent" readonly="True" />
-                        </group>
+                        <field name="mall_name_id" />
+                        <field name="tenant_id" />
                     </group>
-                    <notebook>
-                        <page string="Description">
-                            <group>
-                                <field name="description" />
-                                <field name="floor_num_id" />
-                                <field name="shop_area" />
+                    <group>
+                        <field name="shop_rent" readonly="True" />
+                        <field name="best_price" />
+                        <field name="date_on_rent" readonly="True" />
+                    </group>
+                </group>
+                <notebook>
+                    <page string="Description">
+                        <group>
+                            <field name="name" placeholder="e.g. Pet Shop"/>
+                            <field name="category_id" placeholder="e.g. Food" />
+                            <field name="description" />
+                            <field name="floor_num_id" domain="[('mall_id', '=', mall_name_id)]" />
+                            <field name="shop_area" />
                             </group>
                         </page>
                         <page string="Offers">

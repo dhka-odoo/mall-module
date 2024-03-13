@@ -20,7 +20,7 @@
             <field name="name" />
             <field name="tenant_contact" />
             <field name="tenant_email" />
-            <field name="shop_num" />
+            <field name="shop_num" widget="many2many_tags"/>
             <field name="tenant_type" />
           </tree>
         </field>

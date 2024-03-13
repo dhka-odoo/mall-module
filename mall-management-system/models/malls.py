@@ -8,7 +8,7 @@ class malls(models.Model):
     name = fields.Char('Mall/Complex name',required=True,tracking=True)
     address = fields.Char('Address',tracking=True)
     owner = fields.Char('Owner',tracking=True)
-    owner_contact = fields.Integer("Owner's Contact no.",tracking=True)
+    owner_contact = fields.Char("Owner's Contact no.",tracking=True)
     owner_email = fields.Char('Email',tracking=True)
     shop_ids = fields.One2many('mall.shop','mall_name_id', string="Shops",tracking=True)
     description = fields.Text('Mall Description')

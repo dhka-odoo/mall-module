@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <!-- Mall 1 Shops -->
+    <record id="demo_mall_1_shop_1" model="mall.shop">
+        <field name="name">Fashionista</field>
+        <field name="shop_num">101</field>
+        <field name="description">Trendy fashion store offering the latest styles.</field>
+        <field name="floor_num_id" ref="demo_mall_1_floor_1"/>
+        <field name="shop_area">80.0</field>
+        <field name="mall_name_id" ref="demo_mall_1"/>
+        <field name="state">New</field>
+        <field name="category_id" ref="mall_shop_categories_2"/>
+    </record>
+
+    <record id="demo_mall_1_shop_2" model="mall.shop">
+        <field name="name">Sporty World</field>
+        <field name="shop_num">203</field>
+        <field name="description">Your one-stop-shop for all your sports and fitness needs.</field>
+        <field name="floor_num_id" ref="demo_mall_1_floor_2"/>
+        <field name="shop_area">120.0</field>
+        <field name="mall_name_id" ref="demo_mall_1"/>
+        <field name="state">New</field>
+        <field name="category_id" ref="mall_shop_categories_4"/>
+    </record>
+    
+    <record id="demo_mall_1_shop_3" model="mall.shop">
+        <field name="name">Tech Haven</field>
+        <field name="shop_num">102</field>
+        <field name="description">Your destination for the latest tech gadgets and accessories.</field>
+        <field name="floor_num_id" ref="demo_mall_1_floor_1"/>
+        <field name="shop_area">90.0</field>
+        <field name="mall_name_id" ref="demo_mall_1"/>
+        <field name="state">Offer_Received</field>
+        <field name="category_id" ref="mall_shop_categories_5"/>
+    </record>
+    
+    
+    <!-- Mall 2 shops -->
+
+    <record id="demo_mall_2_shop_1" model="mall.shop">
+        <field name="name">Electro World</field>
+        <field name="shop_num">201</field>
+        <field name="description">Electronics store with a wide range of gadgets and appliances.</field>
+        <field name="floor_num_id" ref="demo_mall_2_floor_2"/>
+        <field name="shop_area">100.0</field>
+        <field name="mall_name_id" ref="demo_mall_2"/>
+        <field name="state">Offer_Received</field>
+        <field name="category_id" ref="mall_shop_categories_5"/>
+    </record>
+    
+    <record id="demo_mall_2_shop_2" model="mall.shop">
+        <field name="name">Cosmic Books</field>
+        <field name="shop_num">202</field>
+        <field name="description">Explore the universe of literature with our vast collection of books.</field>
+        <field name="floor_num_id" ref="demo_mall_2_floor_2"/>
+        <field name="shop_area">150.0</field>
+        <field name="mall_name_id" ref="demo_mall_2"/>
+        <field name="state">New</field>
+        <field name="category_id" ref="mall_shop_categories_3"/>
+    </record>
+        
+    <record id="demo_mall_2_shop_3" model="mall.shop">
+        <field name="name">Mc Burger</field>
+        <field name="shop_num">203</field>
+        <field name="description">Get the Best burgers in the town.</field>
+        <field name="floor_num_id" ref="demo_mall_2_floor_1"/>
+        <field name="shop_area">110.0</field>
+        <field name="mall_name_id" ref="demo_mall_2"/>
+        <field name="state">Offer_Accepted</field>
+        <field name="category_id" ref="mall_shop_categories_1"/>
+    </record>
+
+    <!-- Mall 3 shops -->
+
+    <record id="demo_mall_3_shop_1" model="mall.shop">
+        <field name="name">Gourmet Delights</field>
+        <field name="shop_num">101</field>
+        <field name="description">Delicatessen offering gourmet foods and treats.</field>
+        <field name="floor_num_id" ref="demo_mall_3_floor_1"/>
+        <field name="shop_area">120.0</field>
+        <field name="mall_name_id" ref="demo_mall_3"/>
+        <field name="state">New</field>
+        <field name="category_id" ref="mall_shop_categories_1"/>
+    </record>
+
+    <record id="demo_mall_3_shop_2" model="mall.shop">
+        <field name="name">Kids Haven</field>
+        <field name="shop_num">102</field>
+        <field name="description">A paradise for kids with a wide range of toys and games.</field>
+        <field name="floor_num_id" ref="demo_mall_3_floor_1"/>
+        <field name="shop_area">80.0</field>
+        <field name="mall_name_id" ref="demo_mall_3"/>
+        <field name="state">On_Rent</field>
+        <field name="category_id" ref="mall_shop_categories_3"/>
+        <field name="date_on_rent">2023-01-15</field>
+    </record>
+
+    <record id="demo_mall_3_shop_3" model="mall.shop">
+        <field name="name">Food Paradise</field>
+        <field name="shop_num">-103</field>
+        <field name="description">Food with different styles available.</field>
+        <field name="floor_num_id" ref="demo_mall_3_floor_-1"/>
+        <field name="shop_area">95.0</field>
+        <field name="mall_name_id" ref="demo_mall_3"/>
+        <field name="state">On_Rent</field>
+        <field name="category_id" ref="mall_shop_categories_1"/>
+        <field name="date_on_rent">2023-02-20</field>
+    </record>
+    
+</odoo>

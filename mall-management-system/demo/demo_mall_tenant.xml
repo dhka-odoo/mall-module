@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <record id="demo_tenant_1" model="mall.tenant">
+        <field name="name">Rajesh Sharma</field>
+        <field name="address">456, Park Avenue</field>
+        <field name="tenant_contact">9876543210</field>
+        <field name="tenant_mobile">9012345678</field>
+        <field name="tenant_email">rajesh.sharma@example.com</field>
+        <field name="tenant_type">individual</field>
+    </record>
+    
+    <record id="demo_tenant_2" model="mall.tenant">
+        <field name="name">Priya Patel</field>
+        <field name="address">789, Lake Road</field>
+        <field name="tenant_contact">8765432109</field>
+        <field name="tenant_mobile">8901234567</field>
+        <field name="tenant_email">priya.patel@example.com</field>
+        <field name="tenant_type">individual</field>
+    </record>
+    
+    <record id="demo_tenant_3" model="mall.tenant">
+        <field name="name">Anand Enterprises</field>
+        <field name="address">321, Gandhi Nagar</field>
+        <field name="tenant_contact">7654321098</field>
+        <field name="tenant_mobile">7890123456</field>
+        <field name="tenant_email">info@anandenterprises.com</field>
+        <field name="company_name" ref="base.res_partner_1"/>
+        <field name="tenant_type">company</field>
+    </record>
+    
+    <record id="demo_tenant_4" model="mall.tenant">
+        <field name="name">Mc Burger</field>
+        <field name="address">592, Ahmedabad</field>
+        <field name="tenant_contact">8921323891</field>
+        <field name="tenant_mobile">8921323582</field>
+        <field name="tenant_email">MCD@mcd.com</field>
+        <field name="company_name" ref="base.res_partner_2"/>
+        <field name="tenant_type">company</field>
+    </record>
+
+    <record id="demo_tenant_5" model="mall.tenant">
+        <field name="name">Ramesh bhai</field>
+        <field name="address">Somewhere on Earth</field>
+        <field name="tenant_contact">9090909012</field>
+        <field name="tenant_mobile">9191919102</field>
+        <field name="tenant_email">ramesh@suresh.com</field>
+        <field name="tenant_type">individual</field>
+    </record>
+    
+</odoo>
